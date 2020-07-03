@@ -89,7 +89,7 @@ module.exports = {
     return uniPluginOptions.filterTag
   },
   getPlatformVue (vueOptions) {
-    return uniPluginOptions.vue || '@dcloudio/vue-cli-plugin-uni/packages/mp-vue'
+    return vueOptions.vue || uniPluginOptions.vue || '@dcloudio/vue-cli-plugin-uni/packages/mp-vue'
   },
   getPlatformCssVars () {
     return uniPluginOptions.cssVars || {}
